@@ -1,12 +1,9 @@
 
-
-source ./common.vim
-
-source ./plugins.vim
-source ./plugins-syntastic.vim
-source ./plugins-airline.vim
-source ./plugins-ale.vim
-source ./plugins-vim-javascript.vim
-source ./plugins-coc.vim
-
-source ./gui.vim
+" exec 'source' g:modulesRoot . 'george.vim'
+exec 'source' g:modulesRoot . 'common.vim'
+exec 'source' g:modulesRoot . 'plugins.vim'
+exec 'source' g:modulesRoot . 'plugins-syntastic.vim'
+exec 'source' g:modulesRoot . 'plugins-airline.vim'
+exec 'source' g:modulesRoot . 'plugins-ale.vim'
+exec 'source' g:modulesRoot . 'plugins-vim-javascript.vim'
+exec 'source' g:modulesRoot . 'gui.vim'

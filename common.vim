@@ -16,7 +16,7 @@ set number
 set rnu
 set tw=79
 set nowrap
-set cursorline
+" set cursorline
 " set colorcolumn=80
 
 set backspace=indent,eol,start
