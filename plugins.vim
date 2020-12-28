@@ -50,6 +50,7 @@ call plug#begin('~/.vim/plugged')
       Plug 'tomasiser/vim-code-dark'
       Plug 'aunsira/macvim-light'
       Plug 'tjammer/focusedpanic.vim'
+      Plug 'doums/darcula'
       " find more at vimcolors.com
 
       " language support
