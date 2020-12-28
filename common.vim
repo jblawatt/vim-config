@@ -49,3 +49,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 highlight Comment ctermfg=green
 
 map <F9> :RandomColorScheme<CR>
+
+set mouse=a
