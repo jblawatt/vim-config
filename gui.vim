@@ -4,12 +4,20 @@ if has('gui_running')
     set cursorline
     set noeb vb t_vb=
     set vb t_vb=
-    colors torte
+    " colors torte
+    " colors challenger_deep
+    colors embark
     set background=dark
 
     " font settings for different os
     if has("win32")
-        set guifont=SF_Mono:h9:cANSI:qDRAFT
+        " colors gruvbox
+        " colors jellyx
+        set guifont=CaskaydiaCove_Nerd_Font_Mono:h10
+        set guifont=Monofur_NF:h12
+        " set guifont=SF_Mono:h12:cANSI:qDRAFT
+        " set guifont=DaddyTimeMono_NF:h12:W500
+        " set guifont=VictorMono_NF:h10:W500
     end
 
     if has("unix")
