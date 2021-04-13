@@ -52,4 +52,3 @@ set mouse=a
 set laststatus=2
 let g:rainbow_active=1
 map <leader>f :CocCommand prettier.formatFile<CR>
-
