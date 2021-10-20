@@ -1,14 +1,17 @@
 
 set nocompatible
 
-call plug#begin('~/.vim/plugged')
+if has("nvim")
+    call plug#begin(stdpath('data') . '/plugged')
+else
+    call plug#begin('~/.vim/plugged')
+end
 
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdcommenter'
-Plug 'terryma/vim-multiple-cursors'
 " Plug 'vim-ctrlspace/vim-ctrlspace'
 " Plug 'vim-airline/vim-airline-themes'
 " Plug 'itchyny/lightline.vim'
@@ -17,14 +20,15 @@ Plug 'xolox/vim-colorscheme-switcher'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'kien/ctrlp.vim'
 Plug 'sheerun/vim-polyglot'
-" Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 " Plug 'Shougo/deoplete.nvim'
 " Plug 'roxma/nvim-yarp'
 " Plug 'roxma/vim-hug-neovim-rpc'
 " Plug 'ycm-core/YouCompleteMe'
-
+Plug 'mg979/vim-visual-multi'
 Plug 'frazrepo/vim-rainbow'
 Plug 'honza/vim-snippets'
+Plug 'tpope/vim-fugitive'
 
 " themes:
 Plug 'altercation/vim-colors-solarized'
@@ -70,7 +74,8 @@ Plug 'lucasprag/simpleblack'
 Plug 'pineapplegiant/spaceduck'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'embark-theme/vim', { 'as': 'embark' }
-
+Plug 'larsbs/vimterial_dark'
+Plug 'rakr/vim-one'
 " find more at vimcolors.com
 
 " language support
@@ -86,10 +91,11 @@ Plug 'mattn/emmet-vim'
 " Plug 'manicmaniac/coconut.vim'
 " Plug 'elixir-editors/vim-elixir'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neovimhaskell/haskell-vim'
+" Plug 'neovimhaskell/haskell-vim'
 " Plug 'kchmck/vim-coffee-script'
 " Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 Plug 'Chiel92/vim-autoformat'
+"
 " Initialize plugin system
 call plug#end()
 

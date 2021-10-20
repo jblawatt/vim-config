@@ -14,7 +14,7 @@ filetype plugin on
 
 set number
 set rnu
-set tw=79
+" set tw=79
 set nowrap
 " set cursorline
 " set colorcolumn=80
@@ -44,6 +44,12 @@ set smartcase
 set nobackup
 set nowritebackup
 set noswapfile
+
+" set wildmode
+set wildmenu
+
+" autoreload changes
+set autoread
 
 autocmd BufWritePre * :%s/\s\+$//e
 highlight Comment ctermfg=green
