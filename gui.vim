@@ -31,3 +31,8 @@ if has('gui_running')
 
 endif
 
+if has("nvim")
+    GuiTabline 0
+    GuiFont BlexMonoNerdFont:h10
+end
+
