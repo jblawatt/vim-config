@@ -12,23 +12,20 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdcommenter'
-" Plug 'vim-ctrlspace/vim-ctrlspace'
 " Plug 'vim-airline/vim-airline-themes'
-" Plug 'itchyny/lightline.vim'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'kien/ctrlp.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'majutsushi/tagbar'
-" Plug 'Shougo/deoplete.nvim'
-" Plug 'roxma/nvim-yarp'
-" Plug 'roxma/vim-hug-neovim-rpc'
-" Plug 'ycm-core/YouCompleteMe'
 Plug 'mg979/vim-visual-multi'
 Plug 'frazrepo/vim-rainbow'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'mbbill/undotree'
+
 
 " themes:
 Plug 'altercation/vim-colors-solarized'
@@ -85,7 +82,7 @@ Plug 'cespare/vim-toml'
 " Plug 'shutnik/jshint2.vim'
 " Plug 'derekwyatt/vim-scala'
 Plug 'pangloss/vim-javascript'
-Plug 'elmcast/elm-vim'
+" Plug 'elmcast/elm-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 " Plug 'manicmaniac/coconut.vim'
@@ -99,4 +96,4 @@ Plug 'Chiel92/vim-autoformat'
 " Initialize plugin system
 call plug#end()
 
-
+"

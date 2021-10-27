@@ -14,7 +14,6 @@ filetype plugin on
 
 set number
 set rnu
-" set tw=79
 set nowrap
 " set cursorline
 " set colorcolumn=80
@@ -61,14 +60,16 @@ map sk <C-w>k
 map sj <C-w>j
 map sl <C-w>l
 
-" Switch tab
-nmap <S-Tab> :tabprev<Return>
-nmap <Tab> :tabnext<Return>
+if has("gui_running")
+    nmap <S-F5> :so $MYVIMRC<CR>
+else
+    nmap <S-F5> :so $MYVIMRC<CR>
+end
 
 " some other options
 autocmd BufWritePre * :%s/\s\+$//e
 highlight Comment ctermfg=green
-map <F9> :RandomColorScheme<CR>
+" map <F9> :RandomColorScheme<CR>
 set mouse=a
 set laststatus=2
 let g:rainbow_active=1
