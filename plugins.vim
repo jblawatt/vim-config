@@ -25,7 +25,9 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
-
+Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " themes:
 Plug 'altercation/vim-colors-solarized'
@@ -40,10 +42,10 @@ Plug 'mkarmona/materialbox'
 Plug 'mkarmona/colorsbox'
 Plug 'hewo/vim-colorscheme-deepsea'
 " Plug 'scrooloose/syntastic'
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 Plug 'joshdick/onedark.vim'
-Plug 'atelierbram/vim-colors_duotones'
-Plug 'changyuheng/color-scheme-holokai-for-vim'
+" Plug 'atelierbram/vim-colors_duotones'
+" Plug 'changyuheng/color-scheme-holokai-for-vim'
 Plug 'petelewis/vim-evolution'
 Plug 'cesardeazevedo/Fx-ColorScheme'
 Plug 'notpratheek/vim-luna'
@@ -73,18 +75,21 @@ Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'larsbs/vimterial_dark'
 Plug 'rakr/vim-one'
+Plug 'phanviet/vim-monokai-pro'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
+Plug 'drewtempelmeyer/palenight.vim'
 " find more at vimcolors.com
 
 " language support
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
 Plug 'cespare/vim-toml'
 " Plug 'isRuslan/vim-es6'
 " Plug 'shutnik/jshint2.vim'
 " Plug 'derekwyatt/vim-scala'
 Plug 'pangloss/vim-javascript'
 " Plug 'elmcast/elm-vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'mattn/emmet-vim'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'mattn/emmet-vim'
 " Plug 'manicmaniac/coconut.vim'
 " Plug 'elixir-editors/vim-elixir'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

@@ -31,8 +31,9 @@ if has('gui_running')
 
 endif
 
-if has("nvim")
-    GuiTabline 0
-    GuiFont BlexMonoNerdFont:h10
+if has("nvim") && exists("g:GuiLoaded")
+    " GuiTabline 0
+    colors Tomorrow-Night-Bright
+    GuiFont Anonymice Nerd Font Mono:h16
 end
 

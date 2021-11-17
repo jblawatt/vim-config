@@ -60,10 +60,15 @@ map sk <C-w>k
 map sj <C-w>j
 map sl <C-w>l
 
-if has("gui_running")
-    nmap <S-F5> :so $MYVIMRC<CR>
+" Switch tab
+" nmap <S-Tab> :tabprev<Return>
+" nmap <Tab> :tabnext<Return>
+
+" Reload vimrc
+if has("gui_running") && !has("nvim")
+    map <S-F5> :so $MYGVIMRC<CR>
 else
-    nmap <S-F5> :so $MYVIMRC<CR>
+    map <S-F5> :so $MYVIMRC<CR>
 end
 
 " some other options
