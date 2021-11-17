@@ -66,9 +66,9 @@ map sl <C-w>l
 
 " Reload vimrc
 if has("gui_running") && !has("nvim")
-    map <S-F5> :so $MYGVIMRC<CR>
+    map <S-F5> :source $MYGVIMRC<CR>
 else
-    map <S-F5> :so $MYVIMRC<CR>
+    map <S-F5> :source $MYVIMRC<CR>
 end
 
 " some other options
