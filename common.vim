@@ -7,6 +7,12 @@ set encoding=utf-8
 set pastetoggle=<F2>
 set clipboard=unnamed
 
+set nocompatible
+filetype plugin on
+syntax on
+
+
+
 let mapleader=","
 
 filetype plugin indent on

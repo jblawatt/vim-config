@@ -16,7 +16,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'majutsushi/tagbar'
 Plug 'mg979/vim-visual-multi'
@@ -25,7 +25,9 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
-
+Plug 'vimwiki/vimwiki'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " themes:
 Plug 'altercation/vim-colors-solarized'
@@ -87,7 +89,8 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 " Plug 'manicmaniac/coconut.vim'
 " Plug 'elixir-editors/vim-elixir'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'tag': 'v0.0.80'}
 " Plug 'neovimhaskell/haskell-vim'
 " Plug 'kchmck/vim-coffee-script'
 " Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
