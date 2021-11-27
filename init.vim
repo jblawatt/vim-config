@@ -13,7 +13,6 @@ set hidden
 set relativenumber
 set number
 set termguicolors
-set undofile
 set spell
 set title
 set ignorecase
@@ -117,10 +116,6 @@ nmap s :w<CR>
 "  --------------------------------------------------------------------------------
 "  Plugins
 "  --------------------------------------------------------------------------------
-
-if !exists("g:moduesRoot")
-    let g:modulesRoot = 'D:/Development/vim-config-2/'
-end
 
 if has("nvim")
     call plug#begin(stdpath('data') . '/plugged')
