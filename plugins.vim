@@ -29,6 +29,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'vim-test/vim-test'
 
 " themes:
 Plug 'altercation/vim-colors-solarized'
@@ -79,10 +80,15 @@ Plug 'rakr/vim-one'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'jacoborus/tender.vim'
+Plug 'folke/tokyonight.nvim'
+" , { 'branch': 'main' }
+Plug 'Mofiqul/vscode.nvim'
+
 " find more at vimcolors.com
 
 " language support
-" Plug 'fatih/vim-go'
+Plug 'fatih/vim-go'
 Plug 'cespare/vim-toml'
 " Plug 'isRuslan/vim-es6'
 " Plug 'shutnik/jshint2.vim'
