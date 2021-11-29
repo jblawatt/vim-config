@@ -55,4 +55,4 @@ if has("nvim")
     Plug 'Mofiqul/vscode.nvim'
 end
 
-autocmd User PlugLoaded ++nested colorscheme tender
+autocmd User PlugLoaded ++nested colorscheme eval01-LCL

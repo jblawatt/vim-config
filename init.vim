@@ -13,7 +13,7 @@ set hidden
 set relativenumber
 set number
 set termguicolors
-set spell
+set nospell
 set title
 set ignorecase
 set smartcase
@@ -104,14 +104,7 @@ vnoremap > >gv
 
 let mapleader="\<space>"
 
-nmap s :w<CR>
-
-" edit config file
-" nmap <leader>ve :edit $$MYVIMRC<cr>
-" nmap <leader>veg :edit $MYGVIMRC<cr>
-
-" Reload config file
-" nmap <leader>rr :so $MYVIMRC<cr>
+nmap <leader>p :!black %<CR>
 
 "  --------------------------------------------------------------------------------
 "  Plugins
@@ -135,9 +128,6 @@ end
     exec 'source' g:modulesRoot . 'plugins/_nerdtree.vim'
     exec 'source' g:modulesRoot . 'plugins/_quickscope.vim'
     exec 'source' g:modulesRoot . 'plugins/_vim-test.vim'
-    if has("nvim")
-        exec 'source' g:modulesRoot . 'plugins/_which-key.vim'
-    end
 
 call plug#end()
 
