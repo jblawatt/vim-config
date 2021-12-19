@@ -12,7 +12,6 @@ set autoindent
 set hidden
 set relativenumber
 set number
-set termguicolors
 set nospell
 set title
 set ignorecase
@@ -29,6 +28,7 @@ set exrc
 set encoding=utf-8
 
 if has("nvim")
+    set termguicolors
     set signcolumn=yes:2
     set list
     set listchars=tab:▸\ ,trail:·
@@ -83,6 +83,9 @@ if has("nvim") && exists("g:GuiLoaded") && has("g:GuiLoaded")
     GuiTabline 0
 end
 
+" set background to transparent in terminal if colorscheme changed
+autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
+
 "  --------------------------------------------------------------------------------
 "  Key Bindings
 "  --------------------------------------------------------------------------------
@@ -123,6 +126,7 @@ end
     exec 'source' g:modulesRoot . 'plugins/_fzf.vim'
     exec 'source' g:modulesRoot . 'plugins/_coc.vim'
     exec 'source' g:modulesRoot . 'plugins/_airline.vim'
+    " exec 'source' g:modulesRoot . 'plugins/_lightline.vim'
     exec 'source' g:modulesRoot . 'plugins/_gitgutter.vim'
     exec 'source' g:modulesRoot . 'plugins/_heritage.vim'
     exec 'source' g:modulesRoot . 'plugins/_nerdtree.vim'
