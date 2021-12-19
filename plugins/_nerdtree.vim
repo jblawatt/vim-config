@@ -13,6 +13,7 @@ let g:NERDTreeDirArrowCollapsible = '▿'
 
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>nf :NERDTreeFind<CR>
+nmap <leader>nF :NERDTreeFocus<CR>
 
 
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
