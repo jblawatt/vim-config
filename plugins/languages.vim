@@ -13,5 +13,7 @@ Plug 'mattn/emmet-vim'
 " Plug 'neovimhaskell/haskell-vim'
 " Plug 'kchmck/vim-coffee-script'
 " Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
+
+" Ruby
 Plugin ‘vim-ruby/vim-ruby’
-Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'

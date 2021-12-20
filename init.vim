@@ -83,6 +83,8 @@ if has("nvim") && exists("g:GuiLoaded") && has("g:GuiLoaded")
     GuiTabline 0
 end
 
+" set background to transparent in terminal if colorscheme changed
+autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
 " autocmd User PlugLoaded ++nested colorscheme eva01-LCL
 autocmd User PlugLoaded ++nested colorscheme default
 
@@ -128,6 +130,7 @@ end
     exec 'source' g:modulesRoot . 'plugins/_fzf.vim'
     exec 'source' g:modulesRoot . 'plugins/_coc.vim'
     exec 'source' g:modulesRoot . 'plugins/_airline.vim'
+    " exec 'source' g:modulesRoot . 'plugins/_lightline.vim'
     exec 'source' g:modulesRoot . 'plugins/_gitgutter.vim'
     exec 'source' g:modulesRoot . 'plugins/_heritage.vim'
     exec 'source' g:modulesRoot . 'plugins/_nerdtree.vim'

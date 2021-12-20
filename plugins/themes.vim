@@ -53,8 +53,19 @@ Plug 'haxibami/urara.vim'
 Plug 'DavidBachmann/vim-punk-colorscheme'
 Plug 'n1ghtmare/noirblaze-vim'
 
+Plug 'DavidBachmann/vim-punk-colorscheme'
+Plug 'yassinebridi/vim-purpura'
+Plug 'Rigellute/shades-of-purple.vim'
+Plug 'haxibami/urara.vim'
+Plug 'nicolascb/camarada.vim'
+
+Plug 'jaredgorski/SpaceCamp'
+Plug 'Lokaltog/vim-monotone'
+" Plug 'owickstrom/vim-colors-paramount'
+
 if has("nvim")
     Plug 'folke/tokyonight.nvim'
     Plug 'Mofiqul/vscode.nvim'
 end
 
+autocmd User PlugLoaded ++nested colorscheme paramount
