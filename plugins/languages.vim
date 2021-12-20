@@ -7,9 +7,11 @@ Plug 'cespare/vim-toml'
 Plug 'pangloss/vim-javascript'
 " Plug 'elmcast/elm-vim'
 " Plug 'leafgarland/typescript-vim'
-" Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 " Plug 'manicmaniac/coconut.vim'
 " Plug 'elixir-editors/vim-elixir'
 " Plug 'neovimhaskell/haskell-vim'
 " Plug 'kchmck/vim-coffee-script'
 " Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
+Plugin ‘vim-ruby/vim-ruby’
+Plug 'tpope/vim-rails'

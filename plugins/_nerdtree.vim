@@ -12,8 +12,9 @@ let g:NERDTreeDirArrowExpandable = '▹'
 let g:NERDTreeDirArrowCollapsible = '▿'
 
 nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>N :NERDTreeFocus<CR>
 nmap <leader>nf :NERDTreeFind<CR>
-
+nmap <leader>nm :NERDTreeMirror<CR>
 
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1

@@ -12,7 +12,6 @@ set autoindent
 set hidden
 set relativenumber
 set number
-set termguicolors
 set nospell
 set title
 set ignorecase
@@ -27,11 +26,12 @@ set clipboard=unnamed
 set confirm
 set exrc
 set encoding=utf-8
+set list
+set listchars=tab:▸\ ,trail:·
 
 if has("nvim")
+    set termguicolors
     set signcolumn=yes:2
-    set list
-    set listchars=tab:▸\ ,trail:·
     set wildmode=longest:full,full
 end
 
@@ -83,6 +83,9 @@ if has("nvim") && exists("g:GuiLoaded") && has("g:GuiLoaded")
     GuiTabline 0
 end
 
+" autocmd User PlugLoaded ++nested colorscheme eva01-LCL
+autocmd User PlugLoaded ++nested colorscheme default
+
 "  --------------------------------------------------------------------------------
 "  Key Bindings
 "  --------------------------------------------------------------------------------
@@ -105,6 +108,8 @@ vnoremap > >gv
 let mapleader="\<space>"
 
 nmap <leader>p :!black %<CR>
+
+nmap <leader><F5> :!%:p<CR>
 
 "  --------------------------------------------------------------------------------
 "  Plugins
