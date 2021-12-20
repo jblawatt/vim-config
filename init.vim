@@ -84,7 +84,7 @@ if has("nvim") && exists("g:GuiLoaded") && has("g:GuiLoaded")
 end
 
 " set background to transparent in terminal if colorscheme changed
-autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
+" autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
 " autocmd User PlugLoaded ++nested colorscheme eva01-LCL
 autocmd User PlugLoaded ++nested colorscheme default
 
@@ -109,6 +109,7 @@ vnoremap > >gv
 
 let mapleader="\<space>"
 
+" Run Black on current file
 nmap <leader>p :!black %<CR>
 
 nmap <leader><F5> :!%:p<CR>
