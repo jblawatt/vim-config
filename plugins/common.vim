@@ -25,3 +25,4 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'skanehira/preview-markdown.vim'
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
+

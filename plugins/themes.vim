@@ -1,4 +1,3 @@
-
 Plug 'altercation/vim-colors-solarized'
 Plug 'gosukiwi/vim-atom-dark'
 Plug 'NLKNguyen/papercolor-theme'
@@ -60,9 +59,11 @@ Plug 'jaredgorski/SpaceCamp'
 Plug 'Lokaltog/vim-monotone'
 " Plug 'owickstrom/vim-colors-paramount'
 
+Plug 'Zabanaa/neuromancer.vim'
+Plug 'Arc0re/cyberpunk.vim'
+
 if has("nvim")
     Plug 'folke/tokyonight.nvim'
     Plug 'Mofiqul/vscode.nvim'
 end
 
-autocmd User PlugLoaded ++nested colorscheme paramount

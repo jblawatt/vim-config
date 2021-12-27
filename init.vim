@@ -84,7 +84,10 @@ if has("nvim") && exists("g:GuiLoaded") && has("g:GuiLoaded")
 end
 
 " set background to transparent in terminal if colorscheme changed
-autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
+" autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
+
+" autocmd User PlugLoaded ++nested colorscheme neuromancer
+autocmd User PlugLoaded ++nested colorscheme badwolf
 
 "  --------------------------------------------------------------------------------
 "  Key Bindings
@@ -124,7 +127,7 @@ end
     exec 'source' g:modulesRoot . 'plugins/languages.vim'
 
     exec 'source' g:modulesRoot . 'plugins/_fzf.vim'
-    exec 'source' g:modulesRoot . 'plugins/_coc.vim'
+  "  exec 'source' g:modulesRoot . 'plugins/_coc.vim'
     exec 'source' g:modulesRoot . 'plugins/_airline.vim'
     " exec 'source' g:modulesRoot . 'plugins/_lightline.vim'
     exec 'source' g:modulesRoot . 'plugins/_gitgutter.vim'
@@ -132,6 +135,8 @@ end
     exec 'source' g:modulesRoot . 'plugins/_nerdtree.vim'
     exec 'source' g:modulesRoot . 'plugins/_quickscope.vim'
     exec 'source' g:modulesRoot . 'plugins/_vim-test.vim'
+    exec 'source' g:modulesRoot . 'plugins/_treesitter.vim'
+    exec 'source' g:modulesRoot . 'plugins/_lsp.vim'
 
 call plug#end()
 
