@@ -48,6 +48,9 @@ Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'jacoborus/tender.vim'
 " , { 'branch': 'main' }
+Plug 'haxibami/urara.vim'
+Plug 'DavidBachmann/vim-punk-colorscheme'
+Plug 'n1ghtmare/noirblaze-vim'
 
 Plug 'DavidBachmann/vim-punk-colorscheme'
 Plug 'yassinebridi/vim-purpura'

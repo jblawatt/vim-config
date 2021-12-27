@@ -26,12 +26,12 @@ set clipboard=unnamed
 set confirm
 set exrc
 set encoding=utf-8
+set list
+set listchars=tab:▸\ ,trail:·
 
 if has("nvim")
     set termguicolors
     set signcolumn=yes:2
-    set list
-    set listchars=tab:▸\ ,trail:·
     set wildmode=longest:full,full
 end
 
@@ -85,7 +85,6 @@ end
 
 " set background to transparent in terminal if colorscheme changed
 " autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
-
 " autocmd User PlugLoaded ++nested colorscheme neuromancer
 autocmd User PlugLoaded ++nested colorscheme badwolf
 
@@ -110,7 +109,10 @@ vnoremap > >gv
 
 let mapleader="\<space>"
 
+" Run Black on current file
 nmap <leader>p :!black %<CR>
+
+nmap <leader><F5> :!%:p<CR>
 
 "  --------------------------------------------------------------------------------
 "  Plugins
